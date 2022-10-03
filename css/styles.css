@@ -1,14 +1,19 @@
 :root{
     --color-primary: #212121;
     --color-secondary: #757575;
-    --color-brand: #2196F3;
-    --color-background: #2F303A;
-    --color-pouring: #F5F4FA;
+    --color-brand: #2196f3;
+    --color-background: #2f303a;
+    --color-pouring: #f5f4fA;
+    --color-text-light: #fff;
+    --color-logo: #000;
 }
 
 body{
     color: var(--color-primary);
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', sans-serif;
+}
+.list{
+    list-style: none;
 }
 
 .accent{
@@ -16,10 +21,8 @@ body{
 }
 
 .link-logo{
-    font-family: Raleway;
-    color: #000;
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-logo);
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -28,10 +31,9 @@ body{
 
 .link-navigation{
     color: var(--color-primary);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -40,10 +42,9 @@ body{
 }
 .link-contacts{
     color: var(--color-secondary);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -57,36 +58,31 @@ body{
 }
 
 .hero-title{
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: #fff;
+    color: var(--color-text-light);
     text-align: center;
 }
 
 .btn-primery{
+    font-family: inherit;
     background-color:var(--color-brand);
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--color-text-light);
+    cursor: pointer;
 }
 
-.title-benefitsf{
-    font-style: normal;
-    font-weight: 700;
+.title-benefits{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
 }
 
-.text-benefitsf{
-    font-style: normal;
-    font-weight: 400;
+.text-benefits{ 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -94,8 +90,6 @@ body{
 }
 
 .title-activity{
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -107,8 +101,6 @@ body{
 }
 
 .team-title{
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -116,7 +108,6 @@ body{
 }
 
 .name-title{
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -124,8 +115,6 @@ body{
 }
 
 .text-team{
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
@@ -135,12 +124,12 @@ body{
 .footer{
     background: var(--color-background)
 }
-
+.footer-address{
+    font-style: normal;
+}
 .link-logo-footer{
     font-family: Raleway;
-    color: #fff;
-    font-style: normal;
-    font-weight: 700;
+    color: var(--color-text-light);
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -149,28 +138,41 @@ body{
 
 .link-address{
     text-decoration: none;
-    color: #fff;
-    font-style: normal;
-    font-weight: 400;
+    color: var(--color-text-light);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
+.link-address:hover{
+    color: var(--color-brand)
+}
+
+.footer-contacts-link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-link:hover{
+    color: var(--color-brand)
+}
 .filter-button{
-    font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    text-align: center;
     letter-spacing: 0.03em;
     background-color: var(--color-pouring);
     color: var(--color-primary);
+    cursor: pointer;
 }
 
 .filter-button:hover{
     background-color: var(--color-brand);
-    color: #fff;
+    color: var(--color-text-light);
 }
 
 .item-project{
@@ -187,17 +189,14 @@ body{
 
 .project-title{
     color: var(--color-primary);
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    spacing: 0.06em;
+    letter-spacing: 0.06em;
 }
 
 .project-text{
     color: var(--color-secondary);
-    font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.03em;
 }

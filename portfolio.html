@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css" >
 </head>
 <body>
 
     <header  class="header">
         <nav  class="navigation">
             <a class="link-logo" href="./index.html"><span class="accent">Web</span>Studio</a>
-            <ul class="header-navigation">
+            <ul class="header-navigation list">
                 <li class="item-navigation">
                     <a class="link-navigation" href="./index.html">Студія</a>
                 </li>
@@ -30,7 +30,7 @@
                 </li>
             </ul>
         </nav>
-        <ul>
+        <ul class="list">
             <li>
                 <a class="link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -40,9 +40,9 @@
         </ul>
     </header>  
    <main>
-    <h1 hidden>Портфоліо</h1>
     <section>
-        <ul class="filter-btn">
+        <h1 hidden>Портфоліо</h1>
+        <ul class="filter-btn list">
             <li class="item-button"><button class="filter-button" type="button">Усі</button></li>
             <li class="item-button"><button class="filter-button" type="button">Веб-сайти</button></li>
             <li class="item-button"><button class="filter-button" type="button">Додатки</button></li>
@@ -50,7 +50,7 @@
             <li class="item-button"><button class="filter-button" type="button">Маркетинг</button></li>
         </ul>
     
-        <ul  class="project">
+        <ul  class="project list">
             <li class="item-project" >
                 <a class="link-project" href="./portfolio.html">
                     <img src="./images/project1.jpg" alt="" width="370" height="294" class="project-img">
@@ -119,20 +119,20 @@
    </main>
    <footer class="footer">
     <a class="link-logo-footer" href="./index.html"><span class="accent">Web</span>Studio</a>
-    <address>
-        <ul class="address">
+    <address class="footer-address">
+        <ul class="address list">
             <li  class="iten-address">
                 <a  class="link-address" href="https://goo.gl/maps/ugNVqVzA1ZjysugSA" target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
             <li  class="iten-address">               
-                <a  class="link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a  class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li  class="iten-address">
-                <a  class="link-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a  class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
     </address>
-    </footer>
+</footer>
 
 </body>
 </html>
